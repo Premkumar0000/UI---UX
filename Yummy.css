@@ -20,7 +20,7 @@ body {
 }
 
 .logo-intro img {
-    max-width: 250px;
+    max-width: 400px;
     animation: fadeIn 2s ease-in-out;
 }
 

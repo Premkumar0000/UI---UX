@@ -1,0 +1,49 @@
+
+.logo-intro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  z-index: 9999;
+}
+
+.logo-intro img {
+  max-width: 200px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .logo-intro img {
+    max-width: 250px;
+  }
+  .logo-intro {
+    justify-content: flex;
+  }
+  #two{
+    margin-right: 5%;
+  }
+}
+#one{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+ margin-top: 5%;
+}
+
+#two{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  margin-top: 5%;
+}
+
+
+
+

@@ -1,0 +1,106 @@
+.logo-intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    z-index: 9999;
+  }
+  
+  .logo-intro img {
+    max-width: 200px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .logo-intro img {
+      max-width: 250px;
+    }
+    
+    
+  
+    .logo-intro {
+      justify-content: flex;
+    }
+  }
+  #r{
+   
+        width: 30px; /* Adjust the width as needed */
+        height: 80px; /* Adjust the height as needed */
+      
+  }
+  #box{
+     margin-left: 5%;
+     margin-right: 5%;
+     margin-top: 5%;
+  }
+ .con{
+  border: 1px solid black;
+  height: 40vh;
+  width: 400px;
+  
+ }
+ .con {
+  border: 1px solid rgba(0, 0, 0, 0.19);
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.label-input-group {
+  margin-bottom: 10px;
+
+}
+
+.label-input-group label {
+  display: block;
+  margin-bottom: 5px;
+  
+}
+
+.label-input-group input {
+  width: 100%;
+  box-sizing: border-box;
+  
+  
+}
+
+.comb {
+  display: flex;
+  justify-content: space-between;
+}
+
+.comb1 {
+  flex: 1;
+  margin-right: 10px;
+}
+
+#sub {
+  width: 80%;
+  box-sizing: border-box;
+  margin-top: 5%;
+  
+}
+
+@media (max-width: 768px) {
+  .comb {
+    flex-direction: column;
+  }
+
+  .comb1 {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+ #box{
+  margin-top: 30%;
+ }
+ #eco {
+  margin-top: 50%;
+ }
+}

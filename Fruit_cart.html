@@ -1,0 +1,1095 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="Fruit_cart.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/51ef45e87a.js" crossorigin="anonymous"></script>
+
+ <!-- --------------------------------------------------------------------------- -->
+ <div class="logo-intro">
+  <img src="Images/wired-lineal-526-paper-bag-vegetables.gif" alt="Logo">
+</div>
+   <!-- nav bar -->
+ <div class="website" id="all">
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <!-- <i class="fas fa-bars"></i> --><i class="fa-solid fa-bars"></i>
+    </label>
+    <label class="logo">Eco</label>
+    <ul>
+      <li><a class="active" href="#">Home</a></li>
+      <li><a href="#">Category</a></li>
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Feedback</a></li>
+    </ul>
+   </nav>
+   <!-- nav end -->
+   <!-- cart button -->
+   <span><h4 style="text-align: center; margin-top: 2rem; font-weight: bold;">Our Products<a href="#back"> <button type="button" id="ammi" class="btn btn-success"><i class="fa-solid fa-cart-shopping"></i></button></a></h4></span>
+   <!-- card -->
+   <div class="container">
+    <div class="con" id="fix">
+       <div class="card">
+        <!-- <img class="card-img-top" src="holder.js/100x180/" alt=""> -->
+        <div class="card-body">
+         <center> <h4 class="card-title" id="box"><button type="button" class="btn btn-success" id="b1" onclick="a()">Fruits</button> <button type="button" class="btn btn-success" id="b2" onclick="b()">Veg</button> <button type="button" class="btn btn-success" onclick="c()">Milk</button> <button type="button" class="btn btn-success" onclick="d()">Grocery</button></h4></center>
+          <p class="card-text">
+            
+            <div class="card-deck" id="fruits">
+              <div class="card">
+                <img class="card-img-top" src="holder.js/100x180/" alt="">
+                <div class="card-body">
+                  <h4 class="card-title"><h6 class="card-title" style="color: red;">GET 20% OFF</h6>
+                  </h4>
+                  <p class="card-text">
+                    <div class="com" style="display: grid; grid-template-columns: 6fr 6fr;">
+                      <div class="com">
+                        <img src="Images/apples.png" alt="" srcset="" width="80%">
+                      </div>
+                      <div class="com">
+                        <h6>Apple-Simla</h6>
+                       MRP:<i style="font-style: normal;text-decoration: line-through;color: red;">₹150.00</i>
+                     <p class="total-cost">MRP:₹120.00</p>
+                      <p>500g(5pcs) <button type="button" class="btn btn-success" id="addToCartButton" onclick="c1()">Add to Cart</button></p>
+                      </div>
+                    </div>
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="holder.js/100x180/" alt="">
+                <div class="card-body">
+                  <h4 class="card-title"><h6 class="card-title" style="color: red;">GET 10% OFF</h6></h4>
+                  <p class="card-text">
+                    <div class="com" style="display: grid; grid-template-columns: 6fr 6fr;">
+                      <div class="com">
+                        <img src="Images/banana.png" alt="" srcset="" width="60%">
+                      </div>
+                      <div class="com">
+                        <h6>Banana</h6>
+                       MRP:<i style="font-style: normal;text-decoration: line-through;color: red;">₹80.00</i>
+                     <p class="total-cost">MRP:₹60.00</p>
+                      <p>500g(5-6pcs) <button type="button" class="add-to-cart-btn btn btn-success" id="" onclick="c2()">Add to Cart</button></p>
+                      </div>
+                    </div>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </p>
+          <!--  -->
+          
+          <!--  -->
+          <div class="card-deck" id="fruits2">
+            <div class="card" >
+              <img class="card-img-top" src="holder.js/100x180/" alt="">
+              <div class="card-body">
+                <h4 class="card-title"><h6 class="card-title" style="color: red;">GET 20% OFF</h6></h4>
+                <p class="card-text"> <div class="com" style="display: grid; grid-template-columns: 6fr 6fr;">
+                  <div class="com">
+                    <img src="Images/oranges.webp" alt="" srcset="" width="80%">
+                  </div>
+                  <div class="com">
+                    <h6>Oranges</h6>
+                   MRP:<i style="font-style: normal;text-decoration: line-through;color: red;">₹120.00</i>
+                 <p class="total-cost">MRP:₹100.00</p>
+                  <p>500g(5-6pcs) <button type="button" class="add-to-cart-btn btn btn-success" id="wow3" onclick="c3()">Add to Cart</button></p>
+                  </div>
+                </div></p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="holder.js/100x180/" alt="">
+              <div class="card-body">
+                <h4 class="card-title"><h6 class="card-title" style="color: red;">GET 20% OFF</h6></h4>
+                <p class="card-text">
+                  <div class="com" style="display: grid; grid-template-columns: 6fr 6fr;">
+                    <div class="com">
+                      <img src="Images/watermelon.png" alt="" srcset="" width="80%">
+                    </div>
+                    <div class="com">
+                      <h6>Watermelon</h6>
+                     MRP:<i style="font-style: normal;text-decoration: line-through;color: red;">₹120.00</i>
+                   <p class="total-cost">MRP:₹100.00</p>
+                    <p>500g(5-6pcs) <button type="button" class="add-to-cart-btn btn btn-success" id="wow4" onclick="c4()">Add to Cart</button></p>
+                    </div>
+                  </div>
+                </p>
+              </div>
+             
+            </div>
+            
+          </div>
+          <!-- veg1 -->
+          <div class="card-deck" id="veg1">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title"><h6 class="card-title" style="color: red;">GET 10% OFF</h6></h4>
+                <p class="card-text">
+                  <div class="com" style="display: grid; grid-template-columns: 6fr 6fr;">
+                    <div class="com">
+                      <img src="Images/tomato.png" alt="" srcset="" width="80%">
+                    </div>
+                    <div class="com">
+                      <h6>Tomatos</h6>
+                     MRP:<i style="font-style: normal;text-decoration: line-through;color: red;">₹150.00</i>
+                   <p class="total-cost">MRP:₹120.00</p>
+                    <p>500g(5pcs) <button type="button" class="add-to-cart-btn btn btn-success" id="wow1" onclick="c5()">Add to Cart</button></p>
+                    </div>
+                  </div>
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title"><h6 class="card-title" style="color: red;">GET 10% OFF</h6></h4>
+                <p class="card-text">
+                  <div class="com" style="display: grid; grid-template-columns: 6fr 6fr;">
+                    <div class="com">
+                      <img src="Images/brijals.png" alt="" srcset="" width="80%">
+                    </div>
+                    <div class="com">
+                      <h6>brinjal</h6>
+                     MRP:<i style="font-style: normal;text-decoration: line-through;color: red;">₹150.00</i>
+                   <p class="total-cost">MRP:₹120.00</p>
+                    <p>500g(5pcs) <button type="button" class="add-to-cart-btn btn btn-success" id="wow1" onclick="c6()">Add to Cart</button></p>
+                    </div>
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- veg2 -->
+          <div class="card-deck" id="veg2">
+            <div class="card">
+              <img class="card-img-top" src="holder.js/100x180/" alt="">
+              <div class="card-body">
+                <h4 class="card-title"><h6 class="card-title" style="color: red;">GET 10% OFF</h6></h4>
+                <p class="card-text">
+                  <div class="com" style="display: grid; grid-template-columns: 6fr 6fr;">
+                    <div class="com">
+                      <img src="Images/ladyfinger.png" alt="" srcset="" width="100%">
+                    </div>
+                    <div class="com">
+                      <h6>ladyfinger</h6>
+                     MRP:<i style="font-style: normal;text-decoration: line-through;color: red;">₹150.00</i>
+                   <p class="total-cost">MRP:₹120.00</p>
+                    <p>500g(5pcs) <button type="button" class="add-to-cart-btn btn btn-success" id="wow1" onclick="c7()">Add to Cart</button></p>
+                    </div>
+                  </div>
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="holder.js/100x180/" alt="">
+              <div class="card-body">
+                <h4 class="card-title"><h6 class="card-title" style="color: red;">GET 10% OFF</h6></h4>
+                <p class="card-text">
+                  <div class="com" style="display: grid; grid-template-columns: 6fr 6fr;">
+                    <div class="com">
+                      <img src="Images/mirchi.png" alt="" srcset="" width="100%">
+                    </div>
+                    <div class="com">
+                      <h6>chilli</h6>
+                     MRP:<i style="font-style: normal;text-decoration: line-through;color: red;">₹150.00</i>
+                   <p class="total-cost">MRP:₹120.00</p>
+                    <p>500g(5pcs) <button type="button" class="add-to-cart-btn btn btn-success" id="wow1" onclick="c8()">Add to Cart</button></p>
+                    </div>
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card-deck" id="milk1">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title"><h6 class="card-title" style="color: red;">GET 10% OFF</h6></h4>
+                <p class="card-text">
+                  <div class="com" style="display: grid; grid-template-columns: 6fr 6fr;">
+                    <div class="com">
+                      <img src="Images/packetmilk.png" alt="" srcset="" width="80%">
+                    </div>
+                    <div class="com">
+                      <h6>Milk</h6>
+                     MRP:<i style="font-style: normal;text-decoration: line-through;color: red;">₹150.00</i>
+                   <p class="total-cost">MRP:₹120.00</p>
+                    <p>500g(5pcs) <button type="button" class="add-to-cart-btn btn btn-success" id="" onclick="c9()">Add to Cart</button></p>
+                    </div>
+                  </div>
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title"><h6 class="card-title" style="color: red;">GET 10% OFF</h6></h4>
+                <p class="card-text">
+                  <div class="com" style="display: grid; grid-template-columns: 6fr 6fr;">
+                    <div class="com">
+                      <img src="Images/bread.webp" alt="" srcset="" width="100%">
+                    </div>
+                    <div class="com">
+                      <h6>Bread</h6>
+                     MRP:<i style="font-style: normal;text-decoration: line-through;color: red;">₹150.00</i>
+                   <p class="total-cost">MRP:₹120.00</p>
+                    <p>500g(5pcs) <button type="button" class="add-to-cart-btn btn btn-success" id="" onclick="c10()">Add to Cart</button></p>
+                    </div>
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card-deck" id="milk2">
+            <div class="card">
+              <img class="card-img-top" src="holder.js/100x180/" alt="">
+              <div class="card-body">
+                <h4 class="card-title"><h6 class="card-title" style="color: red;">GET 10% OFF</h6></h4>
+                <p class="card-text">
+                  <div class="com" style="display: grid; grid-template-columns: 6fr 6fr;">
+                    <div class="com">
+                      <img src="Images/cheese.png" alt="" srcset="" width="100%">
+                    </div>
+                    <div class="com">
+                      <h6>Cheese</h6>
+                     MRP:<i style="font-style: normal;text-decoration: line-through;color: red;">₹150.00</i>
+                   <p class="total-cost">MRP:₹120.00</p>
+                    <p>500g(5pcs) <button type="button" class="add-to-cart-btn btn btn-success" id="" onclick="c11()">Add to Cart</button></p>
+                    </div>
+                  </div>
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="holder.js/100x180/" alt="">
+              <div class="card-body">
+                <h4 class="card-title"><h6 class="card-title" style="color: red;">GET 10% OFF</h6></h4>
+                <p class="card-text">
+                  <div class="com" style="display: grid; grid-template-columns: 6fr 6fr;">
+                    <div class="com">
+                      <img src="Images/bbuttermilk.webp" alt="" srcset="" width="100%">
+                    </div>
+                    <div class="com">
+                      <h6>Butter-milk</h6>
+                     MRP:<i style="font-style: normal;text-decoration: line-through;color: red;">₹150.00</i>
+                   <p class="total-cost">MRP:₹120.00</p>
+                    <p>500g(5pcs) <button type="button" class="add-to-cart-btn btn btn-success" id="" onclick="c12()">Add to Cart</button></p>
+                    </div>
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card-deck" id="grocery1">
+            <div class="card">
+              <img class="card-img-top" src="holder.js/100x180/" alt="">
+              <div class="card-body">
+                <h4 class="card-title"><h6 class="card-title" style="color: red;">GET 10% OFF</h6></h4>
+                <p class="card-text">
+                  <div class="com" style="display: grid; grid-template-columns: 6fr 6fr;">
+                    <div class="com">
+                      <img src="Images/masala2.png" alt="" srcset="" width="100%">
+                    </div>
+                    <div class="com">
+                      <h6>masala</h6>
+                     MRP:<i style="font-style: normal;text-decoration: line-through;color: red;">₹150.00</i>
+                   <p class="total-cost">MRP:₹120.00</p>
+                    <p>500g(5pcs) <button type="button" class="add-to-cart-btn btn btn-success" id="" onclick="c13()">Add to Cart</button></p>
+                    </div>
+                  </div>
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="holder.js/100x180/" alt="">
+              <div class="card-body">
+                <h4 class="card-title"><h6 class="card-title" style="color: red;">GET 10% OFF</h6></h4>
+                <p class="card-text">
+                  <div class="com" style="display: grid; grid-template-columns: 6fr 6fr;">
+                    <div class="com">
+                      <img src="Images/Organic-Ghee.png" alt="" srcset="" width="100%">
+                    </div>
+                    <div class="com">
+                      <h6>Ghee</h6>
+                     MRP:<i style="font-style: normal;text-decoration: line-through;color: red;">₹150.00</i>
+                   <p class="total-cost">MRP:₹120.00</p>
+                    <p>500g(5pcs) <button type="button" class="add-to-cart-btn btn btn-success" id="" onclick="c14()">Add to Cart</button></p>
+                    </div>
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card-deck" id="grocery2">
+            <div class="card">
+              <img class="card-img-top" src="holder.js/100x180/" alt="">
+              <div class="card-body">
+                <h4 class="card-title"><h6 class="card-title" style="color: red;">GET 10% OFF</h6></h4>
+                <p class="card-text">
+                  <div class="com" style="display: grid; grid-template-columns: 6fr 6fr;">
+                    <div class="com">
+                      <img src="Images/honey.png" alt="" srcset="" width="80%">
+                    </div>
+                    <div class="com">
+                      <h6>Honey</h6>
+                     MRP:<i style="font-style: normal;text-decoration: line-through;color: red;">₹150.00</i>
+                   <p class="total-cost">MRP:₹120.00</p>
+                    <p>500g(5pcs) <button type="button" class="add-to-cart-btn btn btn-success" id="" onclick="c15()">Add to Cart</button></p>
+                    </div>
+                  </div>
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="holder.js/100x180/" alt="">
+              <div class="card-body">
+                <h4 class="card-title"><h6 class="card-title" style="color: red;">GET 10% OFF</h6></h4>
+                <p class="card-text">
+                  <div class="com" style="display: grid; grid-template-columns: 6fr 6fr;">
+                    <div class="com">
+                      <img src="Images/grains.png" alt="" srcset="" width="100%">
+                    </div>
+                    <div class="com">
+                      <h6>Grains</h6>
+                     MRP:<i style="font-style: normal;text-decoration: line-through;color: red;">₹150.00</i>
+                   <p class="total-cost">MRP:₹120.00</p>
+                    <p>500g(5pcs) <button type="button" class="add-to-cart-btn btn btn-success" id="" onclick="c16()">Add to Cart</button></p>
+                    </div>
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+       </div>
+    </div>
+    <!-- --------------------------------------------------------------- -->
+    <div class="con" >
+      <div class="card" id="back">
+        <img class="card-img-top" src="holder.js/100x180/" alt="">
+        <div class="card-body">
+          <h4 class="card-title"><center>Cart</center></h4>
+          <p class="card-text">
+            <!-- card -->
+            <!-- card strt -->
+            
+            <!-- card end -->
+            <div class="card" id="Apple">
+              <img class="card-img-top" src="holder.js/100x180/" alt="">
+              <div class="card-body">
+                <h6 class="card-title">Apples-simla</h6>
+                <p class="card-text">
+                  <div class="com" style="display: grid; grid-template-columns: 6fr 6fr;">
+                    <div class="com">
+                      <img src="Images/apples.png" alt="" srcset="" width="80%">
+                    </div>
+                    <div class="com">
+                      <div class="toy">
+                        MRP:<i style="font-style: normal;text-decoration: line-through;color: red;">₹150.00</i>
+                        <p class="total-cost"></p>
+                        <input type="hidden" class="cost-per-item" value="120">
+                       
+                        <div class="quantity">
+                          <button class="decrease">-</button>
+                          <input class="quantity-input" type="text" value="1" readonly>
+                          <button class="increase">+</button> 
+                           <button  style="margin-top: 3%;" type="button" class="btn btn-danger" id="r" onclick="r1()">Remove</button>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </p>
+              </div>
+              <div class="card" id="banana">
+                <img class="card-img-top" src="holder.js/100x180/" alt="">
+                <div class="card-body">
+                  <h6 class="card-title">Banana</h6>
+                  <p class="card-text"> <div class="com" style="display: grid; grid-template-columns: 6fr 6fr;">
+                    <div class="com">
+                      <img src="Images/banana.png" alt="" srcset="" width="60%">
+                    </div>
+                    <div class="com">
+                      <div class="toy">
+                        MRP:<i style="font-style: normal;text-decoration: line-through;color: red;">₹60.00</i>
+                        <p class="total-cost"></p>
+                        <input type="hidden" class="cost-per-item" value="80">
+                       
+                        <div class="quantity">
+                          <button class="decrease">-</button>
+                          <input class="quantity-input" type="text" value="1" readonly>
+                          <button class="increase">+</button> 
+                           <button  style="margin-top: 3%;" type="button" class="btn btn-danger" id="r1" onclick="r2()">Remove</button>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div></p>
+                </div>
+                <div class="card" id="orange">
+                  <img class="card-img-top" src="holder.js/100x180/" alt="">
+                  <div class="card-body">
+                    <h6 class="card-title">oranges</h6>
+                    <p class="card-text">
+                      <div class="com" style="display: grid; grid-template-columns: 6fr 6fr;">
+                        <div class="com">
+                          <img src="Images/oranges.webp" alt="" srcset="" width="80%">
+                        </div>
+                        <div class="com">
+                          <div class="toy">
+                            MRP:<i style="font-style: normal;text-decoration: line-through;color: red;">₹120.00</i>
+                            <p class="total-cost"></p>
+                            <input type="hidden" class="cost-per-item" value="100">
+                           
+                            <div class="quantity">
+                              <button class="decrease">-</button>
+                              <input class="quantity-input" type="text" value="1" readonly>
+                              <button class="increase">+</button> 
+                               <button  style="margin-top: 3%;" type="button" class="btn btn-danger"  onclick="r3()">Remove</button>
+                            </div>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="card" id="water">
+                    <img class="card-img-top" src="holder.js/100x180/" alt="">
+                    <div class="card-body">
+                      <h6 class="card-title">Watermelon</h6>
+                      <p class="card-text">
+                        <div class="com" style="display: grid; grid-template-columns: 6fr 6fr;">
+                          <div class="com">
+                            <img src="Images/watermelon.png" alt="" srcset="" width="80%">
+                          </div>
+                          <div class="com">
+                            <div class="toy">
+                              MRP:<i style="font-style: normal;text-decoration: line-through;color: red;">₹120.00</i>
+                              <p class="total-cost"></p>
+                              <input type="hidden" class="cost-per-item" value="100">
+                             
+                              <div class="quantity">
+                                <button class="decrease">-</button>
+                                <input class="quantity-input" type="text" value="1" readonly>
+                                <button class="increase">+</button> 
+                                 <button  style="margin-top: 3%;" type="button" class="btn btn-danger" id="r3" onclick="r4()">Remove</button>
+                              </div>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                      </p>
+                    </div>
+                    <div class="card" id="tomato">
+                      <img class="card-img-top" src="holder.js/100x180/" alt="">
+                      <div class="card-body">
+                        <h6 class="card-title">Tomato</h6>
+                        <p class="card-text">
+                          <div class="com" style="display: grid; grid-template-columns: 6fr 6fr;">
+                            <div class="com">
+                              <img src="Images/tomato.png" alt="" srcset="" width="80%">
+                            </div>
+                            <div class="com">
+                              <div class="toy">
+                                MRP:<i style="font-style: normal;text-decoration: line-through;color: red;">₹120.00</i>
+                                <p class="total-cost"></p>
+                                <input type="hidden" class="cost-per-item" value="100">
+                               
+                                <div class="quantity">
+                                  <button class="decrease">-</button>
+                                  <input class="quantity-input" type="text" value="1" readonly>
+                                  <button class="increase">+</button> 
+                                   <button  style="margin-top: 3%;" type="button" class="btn btn-danger" onclick="r5()">Remove</button>
+                                </div>
+                              </div>
+                              </div>
+                            </div>
+                          </div>
+                        </p>
+                      </div>
+                      <div class="card" id="brinjal">
+                        <img class="card-img-top" src="holder.js/100x180/" alt="">
+                        <div class="card-body">
+                          <h6 class="card-title">brinjal</h6>
+                          <p class="card-text">
+                            <div class="com" style="display: grid; grid-template-columns: 6fr 6fr;">
+                              <div class="com">
+                                <img src="Images/brijals.png" alt="" srcset="" width="80%">
+                              </div>
+                              <div class="com">
+                                <div class="toy">
+                                  MRP:<i style="font-style: normal;text-decoration: line-through;color: red;">₹120.00</i>
+                                  <p class="total-cost"></p>
+                                  <input type="hidden" class="cost-per-item" value="100">
+                                 
+                                  <div class="quantity">
+                                    <button class="decrease">-</button>
+                                    <input class="quantity-input" type="text" value="1" readonly>
+                                    <button class="increase">+</button> 
+                                     <button  style="margin-top: 3%;" type="button" class="btn btn-danger" onclick="r6()">Remove</button>
+                                  </div>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                  </div>
+                  <div class="card" id="ladyfinger">
+                    <img class="card-img-top" src="holder.js/100x180/" alt="">
+                    <div class="card-body">
+                      <h6 class="card-title">ladyfinger</h6>
+                      <p class="card-text">
+                        <div class="com" style="display: grid; grid-template-columns: 6fr 6fr;">
+                          <div class="com">
+                            <img src="Images/ladyfinger.png" alt="" srcset="" width="80%">
+                          </div>
+                          <div class="com">
+                            <div class="toy">
+                              MRP:<i style="font-style: normal;text-decoration: line-through;color: red;">₹150.00</i>
+                              <p class="total-cost"></p>
+                              <input type="hidden" class="cost-per-item" value="120">
+                             
+                              <div class="quantity">
+                                <button class="decrease">-</button>
+                                <input class="quantity-input" type="text" value="1" readonly>
+                                <button class="increase">+</button> 
+                                 <button  style="margin-top: 3%;" type="button" class="btn btn-danger" onclick="r7()">Remove</button>
+                              </div>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!--  -->
+                        
+                </div>
+                <div class="card" id="mirchi">
+                  <img class="card-img-top" src="holder.js/100x180/" alt="">
+                  <div class="card-body">
+                    <h6 class="card-title">chilli</h6>
+                    <p class="card-text">
+                      <div class="com" style="display: grid; grid-template-columns: 6fr 6fr;">
+                        <div class="com">
+                          <img src="Images/mirchi.png" alt="" srcset="" width="80%">
+                        </div>
+                        <div class="com">
+                          <div class="toy">
+                            MRP:<i style="font-style: normal;text-decoration: line-through;color: red;">₹150.00</i>
+                            <p class="total-cost"></p>
+                            <input type="hidden" class="cost-per-item" value="120">
+                           
+                            <div class="quantity">
+                              <button class="decrease">-</button>
+                              <input class="quantity-input" type="text" value="1" readonly>
+                              <button class="increase">+</button> 
+                               <button  style="margin-top: 3%;" type="button" class="btn btn-danger" onclick="r8()">Remove</button>
+                            </div>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--  -->
+                      
+              </div>
+              
+              <div class="card" id="milk">
+                <img class="card-img-top" src="holder.js/100x180/" alt="">
+                <div class="card-body">
+                  <h6 class="card-title">Milk</h6>
+                  <p class="card-text">
+                    <div class="com" style="display: grid; grid-template-columns: 6fr 6fr;">
+                      <div class="com">
+                        <img src="Images/packetmilk.png" alt="" srcset="" width="80%">
+                      </div>
+                      <div class="com">
+                        <div class="toy">
+                          MRP:<i style="font-style: normal;text-decoration: line-through;color: red;">₹150.00</i>
+                          <p class="total-cost"></p>
+                          <input type="hidden" class="cost-per-item" value="120">
+                         
+                          <div class="quantity">
+                            <button class="decrease">-</button>
+                            <input class="quantity-input" type="text" value="1" readonly>
+                            <button class="increase">+</button> 
+                             <button  style="margin-top: 3%;" type="button" class="btn btn-danger" onclick="r9()">Remove</button>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ----- -->
+                    
+            </div>
+            <div class="card" id="bread">
+              <img class="card-img-top" src="holder.js/100x180/" alt="">
+              <div class="card-body">
+                <h6 class="card-title">bread</h6>
+                <p class="card-text">
+                  <div class="com" style="display: grid; grid-template-columns: 6fr 6fr;">
+                    <div class="com">
+                      <img src="Images/bread.webp" alt="" srcset="" width="80%">
+                    </div>
+                    <div class="com">
+                      <div class="toy">
+                        MRP:<i style="font-style: normal;text-decoration: line-through;color: red;">₹150.00</i>
+                        <p class="total-cost"></p>
+                        <input type="hidden" class="cost-per-item" value="120">
+                       
+                        <div class="quantity">
+                          <button class="decrease">-</button>
+                          <input class="quantity-input" type="text" value="1" readonly>
+                          <button class="increase">+</button> 
+                           <button  style="margin-top: 3%;" type="button" class="btn btn-danger" onclick="r10()">Remove</button>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+            <!-- card-end -->
+             <!-- veg -->
+            
+          </p>
+          
+        </div>
+        <div class="card" id="cheese">
+          <img class="card-img-top" src="holder.js/100x180/" alt="">
+          <div class="card-body">
+            <h6 class="card-title">Cheese</h6>
+            <p class="card-text">
+              <div class="com" style="display: grid; grid-template-columns: 6fr 6fr;">
+                <div class="com">
+                  <img src="Images/cheese.png" alt="" srcset="" width="80%">
+                </div>
+                <div class="com">
+                  <div class="toy">
+                    MRP:<i style="font-style: normal;text-decoration: line-through;color: red;">₹150.00</i>
+                    <p class="total-cost"></p>
+                    <input type="hidden" class="cost-per-item" value="120">
+                   
+                    <div class="quantity">
+                      <button class="decrease">-</button>
+                      <input class="quantity-input" type="text" value="1" readonly>
+                      <button class="increase">+</button> 
+                       <button  style="margin-top: 3%;" type="button" class="btn btn-danger" onclick="r11()">Remove</button>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+        
+       </div>
+       <div class="card" id="butter">
+        <img class="card-img-top" src="holder.js/100x180/" alt="">
+        <div class="card-body">
+          <h6 class="card-title">Buttermilk</h6>
+          <p class="card-text">
+            <div class="com" style="display: grid; grid-template-columns: 6fr 6fr;">
+              <div class="com">
+                <img src="Images/bbuttermilk.webp" alt="" srcset="" width="80%">
+              </div>
+              <div class="com">
+                <div class="toy">
+                  MRP:<i style="font-style: normal;text-decoration: line-through;color: red;">₹150.00</i>
+                  <p class="total-cost"></p>
+                  <input type="hidden" class="cost-per-item" value="120">
+                 
+                  <div class="quantity">
+                    <button class="decrease">-</button>
+                    <input class="quantity-input" type="text" value="1" readonly>
+                    <button class="increase">+</button> 
+                     <button  style="margin-top: 3%;" type="button" class="btn btn-danger" onclick="r12()">Remove</button>
+                  </div>
+                </div>
+                </div>
+                
+              </div>
+              
+            </div>
+            
+         
+    </div>
+    <div class="card" id="masala">
+      <img class="card-img-top" src="holder.js/100x180/" alt="">
+      <div class="card-body">
+        <h6 class="card-title">masala</h6>
+        <p class="card-text">
+          <div class="com" style="display: grid; grid-template-columns: 6fr 6fr;">
+            <div class="com">
+              <img src="Images/masala2.png" alt="" srcset="" width="80%">
+            </div>
+            <div class="com">
+              <div class="toy">
+                MRP:<i style="font-style: normal;text-decoration: line-through;color: red;">₹150.00</i>
+                <p class="total-cost"></p>
+                <input type="hidden" class="cost-per-item" value="120">
+               
+                <div class="quantity">
+                  <button class="decrease">-</button>
+                  <input class="quantity-input" type="text" value="1" readonly>
+                  <button class="increase">+</button> 
+                   <button  style="margin-top: 3%;" type="button" class="btn btn-danger" onclick="r13()">Remove</button>
+                </div>
+              </div>
+              </div>
+              
+            </div>
+            
+          </div>
+    </div>
+    <div class="card" id="ghee">
+      <img class="card-img-top" src="holder.js/100x180/" alt="">
+      <div class="card-body">
+        <h6 class="card-title">Ghee</h6>
+        <p class="card-text">
+          <div class="com" style="display: grid; grid-template-columns: 6fr 6fr;">
+            <div class="com">
+              <img src="Images/Organic-Ghee.png" alt="" srcset="" width="80%">
+            </div>
+            <div class="com">
+              <div class="toy">
+                MRP:<i style="font-style: normal;text-decoration: line-through;color: red;">₹150.00</i>
+                <p class="total-cost"></p>
+                <input type="hidden" class="cost-per-item" value="120">
+               
+                <div class="quantity">
+                  <button class="decrease">-</button>
+                  <input class="quantity-input" type="text" value="1" readonly>
+                  <button class="increase">+</button> 
+                   <button  style="margin-top: 3%;" type="button" class="btn btn-danger" onclick="r14()">Remove</button>
+                </div>
+              </div>
+              </div>
+            </div>
+            
+          </div>
+    <!-- --------- -->
+    </div>
+    <div class="card" id="honey">
+      <img class="card-img-top" src="holder.js/100x180/" alt="">
+      <div class="card-body">
+        <h6 class="card-title">Honey</h6>
+        <p class="card-text">
+          <div class="com" style="display: grid; grid-template-columns: 6fr 6fr;">
+            <div class="com">
+              <img src="Images/honey.png" alt="" srcset="" width="80%">
+            </div>
+            <div class="com">
+              <div class="toy">
+                MRP:<i style="font-style: normal;text-decoration: line-through;color: red;">₹150.00</i>
+                <p class="total-cost"></p>
+                <input type="hidden" class="cost-per-item" value="120">
+               
+                <div class="quantity">
+                  <button class="decrease">-</button>
+                  <input class="quantity-input" type="text" value="1" readonly>
+                  <button class="increase">+</button> 
+                   <button  style="margin-top: 3%;" type="button" class="btn btn-danger" onclick="r15()">Remove</button>
+                </div>
+              </div>
+              </div>
+            </div>
+            
+          </div>
+        
+    </div>
+    <div class="card" id="grain">
+      <img class="card-img-top" src="holder.js/100x180/" alt="">
+      <div class="card-body">
+        <h6 class="card-title">grains</h6>
+        <p class="card-text">
+          <div class="com" style="display: grid; grid-template-columns: 6fr 6fr;">
+            <div class="com">
+              <img src="Images/grains.png" alt="" srcset="" width="80%">
+            </div>
+            <div class="com">
+              <div class="toy">
+                MRP:<i style="font-style: normal;text-decoration: line-through;color: red;">₹150.00</i>
+                <p class="total-cost"></p>
+                <input type="hidden" class="cost-per-item" value="120">
+               
+                <div class="quantity">
+                  <button class="decrease">-</button>
+                  <input class="quantity-input" type="text" value="1" readonly>
+                  <button class="increase">+</button> 
+                   <button  style="margin-top: 3%;" type="button" class="btn btn-danger" onclick="r16()">Remove</button>
+                </div>
+              </div>
+              </div>
+            </div>
+             
+          </div>
+          
+    </div>
+    <div class="card" style="border: none;">
+      <img class="card-img-top" src="holder.js/100x180/" alt="">
+      <div class="card-body">
+        <h4 class="card-title"></h4>
+        <p class="card-text">
+         <center> <p>Place Your Order <a href="Location.html"><button type="button" class="btn btn-success">Buy</button></a> </p></center>
+        </p>
+      </div>
+    </div>
+   </div>
+   <!-- card-end -->
+    <script>
+      var fruits= document.getElementById('fruits');
+      var fruits2= document.getElementById('fruits2');
+      var milk1= document.getElementById('milk1');
+      var milk2= document.getElementById('milk2');
+      var grocery1= document.getElementById('grocery1');
+      var grocery2= document.getElementById('grocery2');
+      var veg1= document.getElementById('veg1');
+      var veg2= document.getElementById('veg2');
+      var b1= document.getElementById('b1');
+      var b2= document.getElementById('b2');
+      var wow1= document.getElementById('wow1');
+      var Apple= document.getElementById('Apple');
+      var orange= document.getElementById('orange');
+      var wow2= document.getElementById('wow2');
+      var banana= document.getElementById('banana');
+      var water= document.getElementById('water');
+      var tomato= document.getElementById('tomato');
+      var brinjal= document.getElementById('brinjal');
+      var ladyfinger= document.getElementById('ladyfinger');
+      var mirchi= document.getElementById('mirchi');
+      var milk= document.getElementById('milk');
+      var bread= document.getElementById('bread');
+      var cheese= document.getElementById('cheese');
+      var butter= document.getElementById('butter');
+      var masala= document.getElementById('masala');
+      var ghee= document.getElementById('ghee');
+      var honey= document.getElementById('honey');
+      var grain= document.getElementById('grain');
+
+      function a(){
+        fruits.style.display='flex';
+        fruits2.style.display='flex';
+        milk1.style.display='none';
+        milk2.style.display='none';
+        veg1.style.display="none";
+        veg2.style.display="none";
+        grocery1.style.display='none';
+        grocery2.style.display='none';
+
+      }
+      function b(){
+        fruits.style.display='none';
+        fruits2.style.display='none';
+        milk1.style.display='none';
+        milk2.style.display='none';
+        veg1.style.display='flex';
+        veg2.style.display='flex';
+        grocery1.style.display='none';
+        grocery2.style.display='none';
+
+      }
+      function c(){
+        fruits.style.display='none';
+        fruits2.style.display='none';
+        grocery1.style.display='none';
+        grocery2.style.display='none';
+        veg1.style.display="none";
+        veg2.style.display="none";
+        milk1.style.display='flex';
+        milk2.style.display='flex';
+      }
+      function d(){
+        fruits.style.display='none';
+        fruits2.style.display='none';
+        veg1.style.display="none";
+        veg2.style.display="none";
+        milk1.style.display='none';
+        milk2.style.display='none';
+        grocery1.style.display='flex';
+        grocery2.style.display='flex';
+      }
+      function c1(){
+        Apple.style.display='flex';
+      }
+      function c2(){
+        banana.style.display='flex';
+      }
+      function c3(){
+        orange.style.display='flex';
+      }
+      function c4(){
+        water.style.display='flex';
+      }
+      function c5(){
+        tomato.style.display='flex';
+      }
+      function c6(){
+        brinjal.style.display='flex';
+      }
+      function c7(){
+        ladyfinger.style.display='flex';
+      }
+      function c8(){
+        mirchi.style.display='flex';
+      }
+      function c9(){
+        milk.style.display='flex';
+      }
+      function c10(){
+        bread.style.display='flex';
+      }
+      function c11(){
+        cheese.style.display='flex';
+      }
+      function c12(){
+        butter.style.display='flex';
+      }
+      function c13(){
+        masala.style.display='flex';
+      }
+      function c14(){
+        ghee.style.display='flex';
+      }
+      function c15(){
+        honey.style.display='flex';
+      }
+      function c16(){
+        grain.style.display='flex';
+      }
+      function r1(){
+        Apple.style.display='none';
+      }
+      function r2(){
+        banana.style.display='none';
+      }
+      function r3(){
+        orange.style.display='none';
+      }
+      function r4(){
+        water.style.display='none';
+      }
+      function r5(){
+        tomato.style.display='none';
+      }
+      function r6(){
+        brinjal.style.display='none';
+      }
+      function r7(){
+        ladyfinger.style.display='none';
+      }
+      function r8(){
+        mirchi.style.display='none';
+      }
+      function r9(){
+        milk.style.display='none';
+      }
+      function r10(){
+        bread.style.display='none';
+      }
+      function r11(){
+        cheese.style.display='none';
+      }
+      function r12(){
+        butter.style.display='none';
+      }
+      function r13(){
+        masala.style.display='none';
+      }
+      function r14(){
+        ghee.style.display='none';
+      }
+      function r15(){
+        honey.style.display='none';
+      }
+      function r16(){
+        grain.style.display='none';
+      }
+      const productCards = document.querySelectorAll('.toy');
+
+productCards.forEach(card => {
+  const decreaseButton = card.querySelector('.decrease');
+  const increaseButton = card.querySelector('.increase');
+  const quantityInput = card.querySelector('.quantity-input');
+  const totalCostText = card.querySelector('.total-cost');
+  const costPerItemInput = card.querySelector('.cost-per-item');
+
+  let quantity = 1;
+  let costPerItem = parseFloat(costPerItemInput.value);
+
+  updateTotalCost();
+
+  decreaseButton.addEventListener('click', () => {
+    if (quantity > 1) {
+      quantity--;
+      updateTotalCost();
+    }
+  });
+
+  increaseButton.addEventListener('click', () => {
+    quantity++;
+    updateTotalCost();
+  });
+
+  function updateTotalCost() {
+    quantityInput.value = quantity;
+    const totalCost = quantity * costPerItem;
+    totalCostText.textContent = `MRP: ₹${totalCost.toFixed(2)}`;
+  }
+});
+window.addEventListener("load", function() {
+    const logoIntro = document.querySelector(".logo-intro");
+    const content = document.querySelector(".content");
+
+    setTimeout(function() {
+        logoIntro.style.display = "none";
+        content.style.opacity = "1";
+        content.style.transform = "translateY(0)";
+    }, 4000);
+});
+// ----------------------
+document.getElementById('addToCartButton').addEventListener('click', function() {
+      var button = this;
+
+      if (button.classList.contains('btn-added')) {
+        button.innerHTML = 'Add to Cart';
+        button.classList.remove('btn-added');
+        
+      } else {
+        button.innerHTML = 'Added';
+        button.classList.add('btn-added');
+        button.style.backgroundColor='red';
+      }
+    });
+    // -----------------------------
+    var buttons = document.getElementsByClassName('add-to-cart-btn');
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].addEventListener('click', function() {
+        var button = this;
+
+        if (button.classList.contains('btn-added')) {
+          button.innerHTML = 'Add to Cart';
+          button.classList.remove('btn-added');
+        } else {
+          button.innerHTML = 'Added';
+          button.classList.add('btn-added');
+          button.style.backgroundColor='red';
+        }
+      });
+    }
+    </script>
+   <!--  -->
+   <script>
+    
+   </script>
+
+
+</body>
+</html>

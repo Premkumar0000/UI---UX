@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <link rel="stylesheet" href="Payment.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!--  -->
+  <div class="logo-intro">
+    <img src="Images/wired-lineal-298-coins.gif" alt="Logo">
+  </div>
+  <center><h4 style="margin-top: 3%;" id="eco">ECO <br>Be Organic</h4></center>
+  <div class="card" id="box">
+    <img class="card-img-top" src="holder.js/100x180/" alt="">
+    <div class="card-body">
+        <h4 class="card-title">Choose your payment method:</h4>
+        <p class="card-text">
+           <div id="accordianId" role="tablist" aria-multiselectable="true">
+            <div class="card">
+              <div class="card-header" role="tab" id="section1HeaderId">
+                <h5 class="mb-0">
+                  <a data-toggle="collapse" data-parent="#accordianId" href="#section1ContentId" aria-expanded="true" aria-controls="section1ContentId">
+                     <center style="color: black;">Online Payment</center>
+                   </a>
+                </h5>
+              </div>
+              <div id="section1ContentId" class="collapse in" role="tabpanel" aria-labelledby="section1HeaderId">
+                <div class="card-body">
+                   <center> <div class="con">
+                     <label style="margin-right: 58%; margin-top: 5%;">cardnumber<i style="color: red;">*</i></label> <br>
+                     <input type="number"  name="n" placeholder="xxx xxx xxx xxx" style="width: 80%;border: 1px solid black;"><br>
+                     <div class="comb" style="display: grid;grid-template-columns: 6fr 6fr;">
+                      <div class="comb1">
+                        <label style="margin-right: 20%; margin-top: 5%;">valid thru<i style="color: red;">*</i></label><br>
+                        <input type="number" name="n" placeholder="MM/YY"  style="margin-left: 10%; width: 70%;">
+                      </div>
+                      <div class="comb1">
+                        <label style="margin-right: 60%;margin-top: 4%;">cvv<i style="color: red;">*</i></label><br>
+                        <input type="number" name="n" placeholder="XXX"  style="margin-right: 10%; width: 70%; ">
+                      </div>
+                     
+                     </div>
+                   <a href="Success.html"><button type="button" id="sub" class="btn btn-success">Place Order</button></a>
+                   </div></center>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" role="tab" id="section2HeaderId">
+                <h5 class="mb-0">
+                  <a data-toggle="collapse" data-parent="#accordianId" href="#section2ContentId" aria-expanded="true" aria-controls="section2ContentId">
+                    <center style="color: black;">Cash on delevery</center> 
+                   </a>
+                </h5>
+              </div>
+              <div id="section2ContentId" class="collapse in" role="tabpanel" aria-labelledby="section2HeaderId">
+                <div class="card-body">
+                  <center><img src="Images/Free shipping-amico.png" alt="" srcset="" width="18%"><br>
+                   <a href="Success.html"> <button type="button" class="btn btn-success">Place order</button></a>
+                    </center>
+                </div>
+              </div>
+            </div>
+           </div>
+        </p>
+    </div>
+  </div>
+  <!--  -->
+  <script>
+    window.addEventListener("load", function() {
+      const logoIntro = document.querySelector(".logo-intro");
+      const content = document.querySelector(".content");
+
+      setTimeout(function() {
+        logoIntro.style.display = "none";
+        content.style.opacity = "1";
+        content.style.transform = "translateY(0)";
+      }, 3000);
+    });
+  </script>
+</body>
+</html>

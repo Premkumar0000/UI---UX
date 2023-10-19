@@ -1,0 +1,95 @@
+.logo-intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    z-index: 9999;
+  }
+  
+  .logo-intro img {
+    /* max-width: 200px; */
+    animation: fadeIn 2s ease-in-out;
+    max-width: 100%;
+    height: auto;
+    width: auto\9; 
+  }
+  #pic{
+    width: 20%;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .logo-intro img {
+      max-width: 250px;
+    }
+    #pic{
+      width: 50%;
+    }
+    
+    
+  
+    .logo-intro {
+      justify-content: flex;
+    }
+  }
+
+  .tracker-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 50px auto;
+  }
+
+  .tracker-step {
+    flex: 1;
+    text-align: center;
+    position: relative;
+  }
+
+  .tracker-step:before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 10px auto;
+  }
+
+  .tracker-step.active:before {
+    background-color:green;
+  }
+
+  .tracker-label {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .tracker-step:not(:last-child)::after {
+    content: "";
+    height: 2px;
+    background-color: #ccc;
+    width: calc(100% + 1px); /* Added to extend the line */
+    position: absolute;
+    top: 20%;
+    left: 100%;
+    transform: translate(-50%, -1px); /* Adjusted translation */
+  }
+
+  @media screen and (max-width: 768px) {
+    .tracker-container {
+      flex-direction: column;
+    }
+
+    .tracker-step:not(:last-child)::after {
+      width: 2px;
+      height: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      top: 100%;
+    }
+  }

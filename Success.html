@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="Success.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- --------------------- -->
+  <div class="logo-intro">
+    <img src="Images/success2.gif" alt="Logo">
+  </div>
+  <!--  -->
+  <center><h4 style="margin-top: 3%;" id="eco">ECO <br>Be Organic</h4></center>
+     <div class="card" style="margin-left: 10%;margin-right: 10%; margin-bottom: 3%;">
+      <img class="card-img-top" src="holder.js/100x180/" alt="">
+      <div class="card-body">
+       <center> <h4 class="card-title"><img src="Images/wired-lineal-497-truck-delivery.gif" id="pic" alt="" srcset=""></h4></center>
+        <p class="card-text"><center><h3>Thank you</h3><h4>Your order is ready to reach you!</h4><br>
+          <div class="tracker-container">
+            <div class="tracker-step active">
+              <div class="tracker-label">Order Placed</div>
+            </div>
+            <div class="tracker-step">
+              <div class="tracker-label">Processing</div>
+            </div>
+            <div class="tracker-step">
+              <div class="tracker-label">Shipped</div>
+            </div>
+            <div class="tracker-step">
+              <div class="tracker-label">Delivered</div>
+            </div>
+          </div>
+        </center></p>
+      </div>
+     </div>
+     <!--  -->
+    
+  <!--  -->
+  <script>
+     window.addEventListener("load", function() {
+      const logoIntro = document.querySelector(".logo-intro");
+      const content = document.querySelector(".content");
+
+      setTimeout(function() {
+        logoIntro.style.display = "none";
+        content.style.opacity = "1";
+        content.style.transform = "translateY(0)";
+      }, 2000);
+    });
+  </script>
+</body>
+</html>
